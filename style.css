@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background: #fcfefe;
+   margin: 0;
+   padding: 0;
+}
+img {
+   height: 50px;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 50px 100px;
+}
+
+.nav-items {
+   display: flex;
+   gap: 30px ;
+   align-items: center;
+}
+
+.nav-item ,p {
+   text-decoration: none;
+   color: #696969;
+   font-size: small;
+}
+
+button {
+   color: #ffffff;
+   border: 1px solid #369ac8;
+   padding: 15px 25px;
+   font-size: 16px;
+   border-radius: 6px;
+   font-weight: 700;
+}
+
+button.nav-item , .choose-plan  {
+   color: #0780ee;
+   border: 1px solid #369ac8;
+   background-color: transparent;
+}
+
+/* header section */
+
+
+.header-section , .service-section , .reviews  {
+   margin: 50px 100px;
+}
+
+.header-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+   gap: 10px;
+}
+
+
+.head-image {
+   height: 500px;
+}
+
+h1 {
+   font-size: 40px;
+}
+
+.head-content > * {
+   margin-bottom: 30px;
+}
+
+.head-content button {
+   background-image: linear-gradient(to right bottom, #09c5f8, #0561e9);
+}
+
+/* service section */
+
+.service-intro {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   margin-bottom: 40px;
+}
+
+.service-cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 50px;
+   margin-bottom: 100px;
+}
+
+/* pricing Section */
+
+.pricing-section {
+   background-image: linear-gradient(to right bottom, #09c5f8, #0561e9);
+   padding: 50px 100px;
+}
+.pricing-section h1 {
+   text-align: center;
+   color: #fff;
+}
+
+.pricing-cards {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.pricing-card-item {
+   background-color: #fff;
+   margin: 10px;
+   padding: 10px 30px;
+}
+
+
+
+
+
+.choose-plan.active1 {
+   background-image: linear-gradient(to right bottom, #09c5f8, #0561e9);
+   color: #ffffff;
+}
+
+
+.pc-top {
+margin-bottom: 40px;
+}
+
+.pc-top h3 {
+   font-size: 30px;
+   margin: 0;
+}
+
+.pc-mid-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.pc-mid-content h4 {
+   margin: 10px 5px;
+   font-weight: 100;
+   font-size: 12px;
+}
+
+.pc-mid-content img {
+   height: 20px;
+}
+
+.pc-bottom {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.pc-bottom span {
+   color: #696969;
+}
+
+
+/* reviews */
+
+.reviews {
+   margin: 100px;
+}
+
+.review-intro {
+   text-align: center;
+   padding: 0px 150px;
+   margin: 40px 0px;
+}
+
+.review-cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+.review-card-item {
+   border: 1px solid #c4c4c4;
+   padding: 10px 20px;
+}
+
+.user-id {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.user-id h4 {
+   margin: 10px 0px;
+}
+
+.circle {
+   height: 70px;
+   width: 70px;
+   border-radius: 999px;
+   background-color: #d5d5d5;
+}
+
+/* marketing section */
+
+.marketing-section {
+   background-image: linear-gradient( to right bottom , #09c5f8 , #0561e9);
+   padding: 50px 100px;
+   color: #fff;
+   display: flex;
+   align-content: flex-end;
+   justify-content: space-between;
+}
+
+.marketing-section p {
+   color: #fff;
+}
+
+button.register-us {
+   border: 1px solid white;
+   background: transparent;
+   margin-top: 70px;
+   margin-bottom: 70px;
+}
+
+
+
+/* footer */
+
+footer {
+   margin: 100px 100px;
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.footer-active {
+   font-size: 20px;
+   font-weight: 700;
+   color: #000;
+}
