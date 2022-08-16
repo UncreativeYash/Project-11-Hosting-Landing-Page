@@ -13,15 +13,17 @@ img {
 
 .navbar {
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
-   margin: 50px 100px;
+   margin: 50px 10%;
 }
 
 .nav-items {
    display: flex;
    gap: 30px ;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .nav-item ,p {
@@ -49,7 +51,7 @@ button.nav-item , .choose-plan  {
 
 
 .header-section , .service-section , .reviews  {
-   margin: 50px 100px;
+   margin: 50px 10%;
 }
 
 .header-item {
@@ -58,11 +60,16 @@ button.nav-item , .choose-plan  {
    align-items: center;
    margin-bottom: 50px;
    gap: 10px;
+   flex-wrap: wrap-reverse;
 }
 
 
 .head-image {
-   height: 500px;
+   height: 400px;
+   width: 400px;
+}
+.head-content {
+   width: 400px;
 }
 
 h1 {
@@ -83,22 +90,31 @@ h1 {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   gap: 40px;
+   gap: 10px;
    margin-bottom: 40px;
+   flex-wrap: wrap;
+}
+
+.service-intro h1, .service-intro p {
+   width: 400px;
 }
 
 .service-cards {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   display: flex;
    gap: 50px;
    margin-bottom: 100px;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
+.service-card-item {
+   width: 240px
+}
 /* pricing Section */
 
 .pricing-section {
    background-image: linear-gradient(to right bottom, #09c5f8, #0561e9);
-   padding: 50px 100px;
+   padding: 50px 10%;
 }
 .pricing-section h1 {
    text-align: center;
@@ -109,12 +125,14 @@ h1 {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 40px;
+   flex-wrap: wrap;
 }
 
 .pricing-card-item {
    background-color: #fff;
-   margin: 10px;
    padding: 10px 30px;
+   width: 180px
 }
 
 
@@ -165,23 +183,27 @@ margin-bottom: 40px;
 /* reviews */
 
 .reviews {
-   margin: 100px;
+   margin: 100px 10%;
 }
 
 .review-intro {
    text-align: center;
-   padding: 0px 150px;
    margin: 40px 0px;
+   padding: 0 20%;
 }
 
+
 .review-cards {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
    gap: 20px;
+   align-items: center;
 }
 .review-card-item {
    border: 1px solid #c4c4c4;
    padding: 10px 20px;
+   width: 360px;
 }
 
 .user-id {
@@ -205,16 +227,17 @@ margin-bottom: 40px;
 
 .marketing-section {
    background-image: linear-gradient( to right bottom , #09c5f8 , #0561e9);
-   padding: 50px 100px;
+   padding: 50px 10%;
    color: #fff;
    display: flex;
-   align-content: flex-end;
    justify-content: space-between;
 }
 
 .marketing-section p {
    color: #fff;
 }
+
+
 
 button.register-us {
    border: 1px solid white;
@@ -223,15 +246,19 @@ button.register-us {
    margin-bottom: 70px;
 }
 
+.marketing-message {
+   width: 100%;
+}
 
 
 /* footer */
 
 footer {
-   margin: 100px 100px;
+   margin: 100px 10%;
    margin-bottom: 30px;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 
@@ -239,4 +266,40 @@ footer {
    font-size: 20px;
    font-weight: 700;
    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+
+   .head-image {
+      width: 30vh;
+      height: 30vh;
+   }
+
+   .review-intro {
+      text-align: center;
+      margin: 40px 0px;
+      padding: 0 0%;
+   }
+
+   .review-cards {
+      gap: 40px;
+   }
+   .service-intro {
+      margin-top: 50vh;
+      justify-content: space-around;
+   }
+   .service-cards {
+      justify-content: space-around;
+   }
+   .pricing-cards {
+      justify-content: space-around;
+   }
+
+   .marketing-section {
+      display: block ;
+   }
+
+   footer {
+
+   }
 }
